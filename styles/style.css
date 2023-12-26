@@ -22,13 +22,29 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    padding: 1% 4% 2% 4%;
+    padding: 1% 4% 1% 4%;
+}
+
+.header-scroll{
+    top: 0px;
+    background-color: #00000038;
+    box-shadow: 1px 1px 10px 1px #00000038;
+    backdrop-filter: blur(5px);
+}
+
+.header-logo{
+    width: 9%;
+}
+
+.header-logo img{
+    width: 100%;
 }
 
 .header-menu {
     display: flex;
     align-items: center;
     gap: 40px;
+    margin-top: 2%;
 }
 
 .header-link {
@@ -42,8 +58,11 @@ header {
     color: #ffff;
 }
 
+.header-link p {
+    text-shadow: 2px 2px 3px #0d0d0d99;
+}
 
-.point{
+.point {
     border: 2px solid #F25C05;
     background-color: #F25C05;
     border-radius: 100%;
@@ -53,7 +72,7 @@ header {
     transition: 0.5s;
 }
 
-.header-link:hover .point{
+.header-link:hover .point {
     opacity: 1;
 }
 
@@ -85,6 +104,7 @@ header {
 }
 
 .banner-text strong {
+    font-weight: 500;
     color: #F25C05;
 }
 
@@ -112,6 +132,40 @@ header {
     transition: 0.5s;
 }
 
-.banner-text a:hover{
+.banner-text a:hover {
     background-color: transparent;
+}
+
+.element-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 20px;
+    background: #ffff;
+    padding: 2%;
+    position: absolute;
+    top: 600px;
+    left: 230px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 15px 0px #0d0d0d99;
+}
+
+.item-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-element span {
+    color: #F25C05;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.item-element svg{
+    width: 40%;
+    height: 100%;
 }

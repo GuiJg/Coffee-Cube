@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +8,34 @@
     <link rel="icon shortcute" href="assets/logo-cb.png">
     <title>Coffee Cube</title>
 </head>
+
 <body>
-    <header class="header">
+    <header class="header" id="header-coffee">
         <div class="header-logo">
             <a href="index.html">
                 <img src="assets/logo-cb.png" alt="logo da terra viva">
             </a>
         </div>
         <nav class="header-menu">
+            <a href="#menu" class="header-link">
+                <p>Menu</p>
+                <div class="point" style="width: 10.5%;"></div>
+            </a>
             <a href="#about" class="header-link">
                 <p>Sobre nós</p>
                 <div class="point"></div>
             </a>
             <a href="#products" class="header-link">
                 <p>Produtos</p>
-                <div class="point"></div>
+                <div class="point" style="width: 7.5%;"></div>
             </a>
             <a href="#unidades" class="header-link">
                 <p>Unidades</p>
-                <div class="point"></div>
+                <div class="point" style="width: 7%;"></div>
             </a>
             <a href="#contact" class="header-link">
                 <p>Contato</p>
-                <div class="point"></div>
+                <div class="point" style="width: 7.5%;"></div>
             </a>
         </nav>
     </header>
@@ -40,5 +46,53 @@
             <a href="#unidades">Nossos Cafés</a>
         </div>
     </section>
+    <div class="element-white">
+        <div class="item-element">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor"
+                    d="M16 22V7.5h1A2.5 2.5 0 0 0 19.5 5V3.5H14A2.5 2.5 0 0 1 11.5 1v3.894a6.737 6.737 0 0 1-3 5.606a6.737 6.737 0 0 0-3 5.606V21.5H5A2.5 2.5 0 0 1 2.5 19v-4m5.5.5h2.5v.5c0 1.5 0 2.5.75 4c0 0 .75 1.5 1.75 1.5" />
+            </svg>
+            <span>
+                Pet Friendly
+            </span>
+        </div>
+        <div class="item-element">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                <path fill="currentColor"
+                    d="M82 56V24a6 6 0 0 1 12 0v32a6 6 0 0 1-12 0m38 6a6 6 0 0 0 6-6V24a6 6 0 0 0-12 0v32a6 6 0 0 0 6 6m32 0a6 6 0 0 0 6-6V24a6 6 0 0 0-12 0v32a6 6 0 0 0 6 6m94 58v8a38 38 0 0 1-36.94 38a94.55 94.55 0 0 1-31.13 44H208a6 6 0 0 1 0 12H32a6 6 0 0 1 0-12h30.07A94.34 94.34 0 0 1 26 136V88a6 6 0 0 1 6-6h176a38 38 0 0 1 38 38m-44 16V94H38v42a82.27 82.27 0 0 0 46.67 74h70.66A82.27 82.27 0 0 0 202 136m32-16a26 26 0 0 0-20-25.29V136a93.18 93.18 0 0 1-1.69 17.64A26 26 0 0 0 234 128Z" />
+            </svg>
+            <span>
+                Diversidade de Cafés
+            </span>
+        </div>
+        <div class="item-element">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                <g fill="currentColor">
+                    <path
+                        d="m24 10.5l-.895-.447v.003l-.003.004l-.006.013l-.021.043a10.61 10.61 0 0 0-.29.681a10.96 10.96 0 0 0-.516 1.757c-.264 1.321-.351 3.278 1.024 4.653c.625.625.712 1.668.476 2.847a8.972 8.972 0 0 1-.65 1.971l-.012.025l-.002.003l.895.447c.894.447.895.446.895.446v-.002l.003-.004l.006-.013l.021-.043l.07-.15a10.96 10.96 0 0 0 .736-2.287c.264-1.322.351-3.279-1.024-4.654c-.625-.625-.712-1.668-.476-2.847a8.972 8.972 0 0 1 .65-1.971l.012-.025l.002-.003z" />
+                    <path fill-rule="evenodd"
+                        d="M4 29a1 1 0 0 1 1-1h38a1 1 0 1 1 0 2h-3a8 8 0 0 1-8 8H16a8 8 0 0 1-8-8H5a1 1 0 0 1-1-1m6 1h28a6 6 0 0 1-6 6H16a6 6 0 0 1-6-6"
+                        clip-rule="evenodd" />
+                    <path
+                        d="m15.17 12.441l.83.56c.829.559.83.558.83.558l-.013.02a6.128 6.128 0 0 0-.246.43a5.79 5.79 0 0 0-.45 1.127c-.24.892-.154 1.596.474 2.06c1.622 1.202 1.536 2.999 1.214 4.19a7.783 7.783 0 0 1-.605 1.528a8.037 8.037 0 0 1-.338.588l-.02.032l-.005.007l-.008.012l-.002.004l-.001.001s-.001.002-.83-.558s-.83-.559-.83-.559l.013-.019l.054-.086a6.82 6.82 0 0 0 .192-.344c.155-.298.333-.698.45-1.128c.24-.892.154-1.595-.474-2.06c-1.622-1.202-1.536-2.998-1.214-4.19c.165-.612.409-1.15.605-1.528a8.108 8.108 0 0 1 .363-.626l.007-.012l.003-.005zM33 13c-.829-.56-.83-.559-.83-.559v.002l-.004.005l-.008.012a6.492 6.492 0 0 0-.362.626c-.196.378-.44.916-.605 1.528c-.322 1.191-.408 2.988 1.214 4.19c.628.465.714 1.168.473 2.06c-.116.43-.294.83-.45 1.128a6.018 6.018 0 0 1-.245.43l-.012.02L33 23c.829.56.83.558.83.558v-.001l.004-.004l.008-.012l.015-.025l.01-.014a8.037 8.037 0 0 0 .338-.588a7.85 7.85 0 0 0 .604-1.528c.322-1.191.408-2.988-1.214-4.19c-.628-.465-.714-1.168-.473-2.06c.116-.43.294-.83.45-1.128a6.128 6.128 0 0 1 .245-.43l.012-.019z" />
+                </g>
+            </svg>
+            <span>
+                Brunch
+            </span>
+        </div>
+        <div class="item-element">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor"
+                    d="M24 6.5c-.329 0-.659.07-.937.245C21.5 7.733 21.5 9.08 21.5 10v.5H17m-8 3h15m-7.5 0V24m-4.5-.5c-1 0-1.75-1.5-1.75-1.5c-.75-1.5-.75-2.5-.75-4v-1.5h-8v-.25l1.922-7.495A3 3 0 0 1 6.328 6.5H7.5l1.447 2.894a2 2 0 0 0 1.79 1.106H15m-7.65-6s-1.6-1-1.6-2.25a1.747 1.747 0 1 1 3.496 0C9.246 3.5 7.65 4.5 7.65 4.5z" />
+            </svg>
+            </svg>
+            <span>
+                Coffee Office
+            </span>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
 </body>
+
 </html>
