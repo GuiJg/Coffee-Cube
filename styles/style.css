@@ -156,6 +156,12 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    transition: 0.5s;
+}
+
+.item-element:hover{
+    scale: 1.05;
 }
 
 .item-element span {
@@ -163,6 +169,7 @@ header {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 700;
+    width: 80%;
 }
 
 .item-element svg{
