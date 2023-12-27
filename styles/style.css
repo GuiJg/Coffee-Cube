@@ -320,3 +320,95 @@ header {
     width: 400px;
     height: 350px;
 }
+
+.unidades-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    padding-top: 5%;
+    background-image: url(/assets/coffee-beans-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.unidades-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.unidades-text h2 {
+    color: #0D0D0D;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.unidades-text p {
+    color: #0D0D0D;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 90%;
+}
+
+.container-unidades {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+.unidades {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 2.5em;
+    border: 5px solid #050505;
+}
+
+.unidades:hover .unidades-image{
+    filter: brightness(60%);
+}
+
+.unidades:hover .unidades-span {
+    opacity: 1;
+}
+
+.unidades-image {
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.unidades-image img {
+    border-radius: 2.5em;
+    width: 100%;
+    height: auto;
+}
+
+.unidades-span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.unidades-span svg{
+    width: 60%;
+}
+
+.unidades-span span {
+    color: #ffff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
