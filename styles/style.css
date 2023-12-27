@@ -329,6 +329,7 @@ header {
     text-align: center;
     gap: 50px;
     padding-top: 5%;
+    padding-bottom: 2%;
     background-image: url(/assets/coffee-beans-background.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -370,7 +371,7 @@ header {
     border: 5px solid #050505;
 }
 
-.unidades:hover .unidades-image{
+.unidades:hover .unidades-image {
     filter: brightness(60%);
 }
 
@@ -402,7 +403,7 @@ header {
     transition: 0.5s;
 }
 
-.unidades-span svg{
+.unidades-span svg {
     width: 60%;
 }
 
@@ -410,5 +411,45 @@ header {
     color: #ffff;
     text-align: center;
     font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.feedback-page {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.feedback-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-text h2 {
+    color: #F25C05;
+    font-family: 'Kiwi Maru', serif;
+    font-size: 40.763px;
+    font-weight: 500;
+    line-height: 47.637px;
+    width: 60%;
+    margin-left: 5%;
+}
+
+.feedback-text img {
+    width: 60%;
+}
+
+.feedbacks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.feedbacks h2 {
+    color: #0D0D0D;
+    text-align: center;
+    font-size: 28px;
     font-weight: 700;
 }

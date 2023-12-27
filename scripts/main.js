@@ -26,3 +26,13 @@ document.addEventListener('DOMContentLoaded', function () {
     splide.mount();
 });
 
+new Splide( '#splide', {
+  grid: {
+		rows: 2,
+		cols: 2,
+		gap : {
+			row: '1rem',
+			col: '1.5rem',
+		},
+  },
+} ).mount( { Grid } );
