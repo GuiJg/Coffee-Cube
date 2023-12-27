@@ -1,27 +1,23 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
 }
 
-.section1, .section2 {
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin: 10px;
-}
-
-.custom-element {
-    background-color: #3498db;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+body {
     margin: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    font-family: Arial, sans-serif;
 }
 
-.section2 {
-    margin-top: 100px; /* Ajuste para evitar que o conteúdo da seção 2 seja ocultado pelo elemento fixo */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
