@@ -1,4 +1,5 @@
-const menu = document.getElementById("header-coffee"); // colocar em cache
+
+const menu = document.getElementById("header-coffee"); 
 window.addEventListener("scroll", function () {
 
     if (window.scrollY > 0) {
@@ -14,6 +15,20 @@ window.addEventListener("scroll", function () {
     }
 });
 
+const menuButton = document.querySelector('input');
+const headerMenu = document.querySelector('.header-menu');
+  
+menuButton.addEventListener('click', function() {
+    headerMenu.classList.toggle('active');
+});
+
+const menuButto = document.querySelector('input');
+const headerMen = document.querySelector('header');
+  
+menuButto.addEventListener('click', function() {
+    headerMen.classList.toggle('active');
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     const splide = new Splide('#splide1', {
         perPage: 3,
@@ -25,20 +40,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     checkWidth();
 
-    // Adiciona um ouvinte de alteração de largura da janela
     window.addEventListener('resize', checkWidth);
 
     function checkWidth() {
-        // Verifica se a largura da janela é inferior a 1000 pixels
         if (window.matchMedia('(max-width: 1000px)').matches) {
-            // Se for, ajusta o valor de perPage para 1
             splide.options.perPage = 1;
         } else {
-            // Se não for, volta para o valor original de perPage (3)
             splide.options.perPage = 3;
         }
 
-        // Atualiza o slider com as novas configurações
         splide.destroy();
         splide = new Splide('#splide1', splide.options).mount();
     }

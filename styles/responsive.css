@@ -1,5 +1,14 @@
 @media (max-width: 1000px) {
 
+    header{
+        flex-direction: column;
+    }
+
+    header.active {
+        background-color: #00000038;
+        box-shadow: 1px 1px 10px 1px #00000038;
+        backdrop-filter: blur(5px);
+    }
 
     .header-logo {
         display: flex;
@@ -9,7 +18,7 @@
         width: 100%;
     }
 
-    .header-logo img{
+    .header-logo img {
         width: 60%;
     }
 
@@ -24,10 +33,13 @@
         border-radius: 0;
     }
 
+    .header-menu {
+        flex-direction: column;
+    }
+
     .header-menu.active {
         display: flex;
     }
-
 
     .main-banner {
         height: 36rem;
@@ -169,11 +181,11 @@
         opacity: 1;
     }
 
-    .feedback-page{
+    .feedback-page {
         flex-direction: column;
     }
 
-    .feedback-page img{
+    .feedback-page img {
         width: 0;
     }
 
