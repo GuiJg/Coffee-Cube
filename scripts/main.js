@@ -15,7 +15,7 @@ window.addEventListener("scroll", function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const splide = new Splide('.splide', {
+    const splide = new Splide('#splide1', {
         perPage: 3,
         rewind: true,
         rewindByDrag: true,
@@ -26,13 +26,15 @@ document.addEventListener('DOMContentLoaded', function () {
     splide.mount();
 });
 
-new Splide( '#splide', {
-  grid: {
-		rows: 2,
-		cols: 2,
-		gap : {
-			row: '1rem',
-			col: '1.5rem',
-		},
-  },
-} ).mount( { Grid } );
+document.addEventListener('DOMContentLoaded', function () {
+    const splide = new Splide('#splide2', {
+        grid: {
+            rows: 2,
+            gap: {
+                row: '1rem',
+            },
+        },
+    }).mount({Grid: SplideGrid});
+
+    splide.mount();
+});

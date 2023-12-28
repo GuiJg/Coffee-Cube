@@ -91,38 +91,38 @@
     </div>
     <section class="menu-page">
         <div class="menu-text">
-            <h2>Nosso menu</h2>
+            <h2>Nosso Menu</h2>
             <a href="">Saiba mais</a>
         </div>
         <div class="container-slider">
-            <div class="splide">
+            <div class="splide" id="splide1">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide">
+                        <li class="splide__slide" style="background-color: #FFCCAE;">
                             <img src="assets/cardapio-1.webp" alt="">
                         </li>
-                        <li class="splide__slide">
+                        <li class="splide__slide" style="background-color: #FFCCAE;">
                             <img src="assets/cardapio-2.webp" alt="">
                         </li>
-                        <li class="splide__slide">
+                        <li class="splide__slide" style="background-color: #FFCCAE;">
                             <img src="assets/cardapio-3.webp" alt="">
                         </li>
-                        <li class="splide__slide">
+                        <li class="splide__slide" style="background-color: #FFCCAE;">
                             <img src="assets/cardapio-4.jpg" alt="">
                         </li>
-                        <li class="splide__slide">
+                        <li class="splide__slide" style="background-color: #FFCCAE;">
                             <img src="assets/cardapio-5.webp" alt="">
                         </li>
-                        <li class="splide__slide">
+                        <li class="splide__slide" style="background-color: #FFCCAE;">
                             <img src="assets/cardapio-6.jpg" alt="">
                         </li>
-                        <li class="splide__slide">
+                        <li class="splide__slide" style="background-color: #FFCCAE;">
                             <img src="assets/cardapio-7.webp" alt="">
                         </li>
-                        <li class="splide__slide">
+                        <li class="splide__slide" style="background-color: #FFCCAE;">
                             <img src="assets/cardapio-8.jpg" alt="">
                         </li>
-                        <li class="splide__slide">
+                        <li class="splide__slide" style="background-color: #FFCCAE;">
                             <img src="assets/cardapio-9.webp" alt="">
                         </li>
                     </ul>
@@ -175,7 +175,9 @@
             </p>
         </div>
         <div class="container-unidades">
-            <a class="unidades" href="https://www.google.com/maps/place/Coffee+Cube/@-8.0366247,-34.9049989,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab199055802205:0x968a0e6b608fbf7f!8m2!3d-8.03663!4d-34.9024186!16s%2Fg%2F11s9jcpl_8?entry=ttu" target="_blank">
+            <a class="unidades"
+                href="https://www.google.com/maps/place/Coffee+Cube/@-8.0366247,-34.9049989,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab199055802205:0x968a0e6b608fbf7f!8m2!3d-8.03663!4d-34.9024186!16s%2Fg%2F11s9jcpl_8?entry=ttu"
+                target="_blank">
                 <div class="unidades-image">
                     <img src="assets/jaqueira.jpg" alt="unidade da jaqueira">
                 </div>
@@ -187,7 +189,9 @@
                     <span>Unidade Jaqueira</span>
                 </div>
             </a>
-            <a class="unidades" href="https://www.google.com/maps/place/Coffee+Cube/@-8.0443984,-34.9126068,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab19b806c1392f:0xc79730903c12929c!8m2!3d-8.0444037!4d-34.9077412!16s%2Fg%2F11h_0lww4g?entry=ttu" target="_blank"> 
+            <a class="unidades"
+                href="https://www.google.com/maps/place/Coffee+Cube/@-8.0443984,-34.9126068,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab19b806c1392f:0xc79730903c12929c!8m2!3d-8.0444037!4d-34.9077412!16s%2Fg%2F11h_0lww4g?entry=ttu"
+                target="_blank">
                 <div class="unidades-image">
                     <img src="assets/torre.png" alt="unidade da torre">
                 </div>
@@ -208,26 +212,26 @@
         </div>
         <div class="feedbacks">
             <h2>Feedback de nossos clientes.</h2>
-            <div class="container-feedback-slider">
-                <div class="">
-                    <div class="">
-                        <ul class="">
-                            <li class="">
+            <div class="feedback-slider">
+                <div id="splide2" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
                                 <img src="assets/feedback1.png" alt="">
                             </li>
-                            <li class="">
+                            <li class="splide__slide">
                                 <img src="assets/feedback2.png" alt="">
                             </li>
-                            <li class="">
+                            <li class="splide__slide">
                                 <img src="assets/feedback3.png" alt="">
                             </li>
-                            <li class="">
+                            <li class="splide__slide">
                                 <img src="assets/feedback4.png" alt="">
                             </li>
-                            <li class="">
+                            <li class="splide__slide">
                                 <img src="assets/feedback5.png" alt="">
                             </li>
-                            <li class="">
+                            <li class="splide__slide">
                                 <img src="assets/feedback6.png" alt="">
                             </li>
                         </ul>
@@ -236,7 +240,60 @@
             </div>
         </div>
     </section>
+    <div class="" id="contact"></div>
+    <section class="contact-page">
+        <a class="logo-footer" href="#">
+            <img src="assets/logo-cb.png" alt="Logo da Coffee Cube">
+        </a>
+        <div class="contact-unidades">
+            <h2>Localidade das Unidades</h2>
+            <div class="contact-locais">
+                <div class="locais" id="torre">
+                    <span>Torre</span>
+                    <p>Mercado da Torre - Rua José Bonifácio, 747</p>
+                </div>
+                <div class="locais" id="jaqueira">
+                    <span>Jaqueira</span>
+                    <p>Rua Serrita, 24 - Jaqueira</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-phone">
+            <h2>Entre em Contato</h2>
+            <div class="phone">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                    <path fill="#f25c05"
+                        d="m19.23 15.26l-2.54-.29a1.99 1.99 0 0 0-1.64.57l-1.84 1.84a15.045 15.045 0 0 1-6.59-6.59l1.85-1.85c.43-.43.64-1.03.57-1.64l-.29-2.52a2.001 2.001 0 0 0-1.99-1.77H5.03c-1.13 0-2.07.94-2 2.07c.53 8.54 7.36 15.36 15.89 15.89c1.13.07 2.07-.87 2.07-2v-1.73c.01-1.01-.75-1.86-1.76-1.98" />
+                </svg>
+                <p>(81) 9 9203-3952</p>
+            </div>
+        </div>
+        <div class="contact-social">
+            <div class="social-text">
+                <h2>Redes sociais</h2>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/coffeecubebr" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                        <path fill="#f25c05"
+                            d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/coffeecubebr" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                        <path fill="#f25c05"
+                            d="M13.028 2c1.125.003 1.696.009 2.189.023l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.012.266.022.487.03.712l.006.194c.015.492.021 1.063.023 2.188l.001.746v1.31a78.831 78.831 0 0 1-.023 2.188l-.006.194c-.008.225-.018.446-.03.712c-.05 1.065-.22 1.79-.466 2.428a4.883 4.883 0 0 1-1.153 1.772a4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465a72.11 72.11 0 0 1-.712.03l-.194.006c-.493.014-1.064.021-2.189.023l-.746.001h-1.309a78.43 78.43 0 0 1-2.189-.023l-.194-.006a63.036 63.036 0 0 1-.712-.031c-1.064-.05-1.79-.218-2.428-.465a4.889 4.889 0 0 1-1.771-1.153a4.904 4.904 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.428a74.1 74.1 0 0 1-.03-.712l-.005-.194A79.047 79.047 0 0 1 2 13.028v-2.056a78.82 78.82 0 0 1 .022-2.188l.007-.194c.008-.225.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.88 4.88 0 0 1 3.68 3.678a4.897 4.897 0 0 1 1.77-1.153c.638-.247 1.363-.415 2.428-.465c.266-.012.488-.022.712-.03l.194-.006a79 79 0 0 1 2.188-.023zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 2a3 3 0 1 1 .001 6a3 3 0 0 1 0-6m5.25-3.5a1.25 1.25 0 0 0 0 2.5a1.25 1.25 0 0 0 0-2.5" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
     <script src="scripts/splide.min.js"></script>
+    <script src="scripts/splide-extension-grid.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>
