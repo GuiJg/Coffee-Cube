@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     checkWidth();
-    
+
     // Adiciona um ouvinte de alteração de largura da janela
     window.addEventListener('resize', checkWidth);
 
@@ -52,7 +52,35 @@ document.addEventListener('DOMContentLoaded', function () {
                 row: '1rem',
             },
         },
-    }).mount({Grid: SplideGrid});
+    }).mount({ Grid: SplideGrid });
 
     splide.mount();
 });
+
+const textElement = document.getElementById('animated-text');
+const words = ['café...', 'Coffee Cube'];
+let wordIndex = 0;
+let charIndex = 0;
+
+function type() {
+    if (charIndex < words[wordIndex].length) {
+        textElement.innerHTML += words[wordIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, 100);
+    } else {
+        setTimeout(erase, 1500);
+    }
+}
+
+function erase() {
+    if (charIndex > 0) {
+        textElement.innerHTML = words[wordIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, 50);
+    } else {
+        wordIndex = (wordIndex + 1) % words.length;
+        setTimeout(type, 500);
+    }
+}
+
+type();
