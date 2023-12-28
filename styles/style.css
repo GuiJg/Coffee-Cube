@@ -87,7 +87,7 @@ header {
 .banner-text {
     display: flex;
     flex-direction: column;
-    margin: 6% 0% 0% 5%;
+    margin: 0% 0% 0% 5%;
 }
 
 .banner-text h1 {
@@ -136,15 +136,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    gap: 20px;
+    width: 65%;
+    padding: 2% 5% 2% 5%;
     background: #ffff;
-    padding: 2%;
     position: absolute;
-    top: 600px;
-    left: 230px;
+    transform: translate(26%, -100px);
     border-radius: 25px;
-    box-shadow: 0px 5px 15px 0px #0d0d0d99;
+    box-shadow: 3px 10px 20px -5px #0d0d0d5b;
 }
 
 .item-element {
@@ -169,7 +167,7 @@ header {
 }
 
 .item-element svg {
-    width: 40%;
+    width: 50%;
     height: 100%;
 }
 
@@ -183,6 +181,7 @@ header {
 .menu-text {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0% 5% 5% 5%;
     padding: 1%;
 }
@@ -218,14 +217,16 @@ header {
 .container-slider {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .splide {
     width: 80%;
+    padding: 0% 5% 0% 5%;
 }
 
 .splide__list {
-    gap: 30px;
+    gap: 50px;
 }
 
 .splide__slide {
@@ -233,14 +234,15 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 36px;
-    height: 450px;
-    width: 31% !important;
+    height: 500px;
+    padding: 3% 0% 3% 0%;
+    width: 30% !important;
 }
 
 .splide__slide img {
     border-radius: 36px;
-    width: 85%;
-    height: 85%;
+    width: 90%;
+    height: 100%;
 }
 
 .about-page {
@@ -253,6 +255,7 @@ header {
     padding-top: 5%;
     padding-bottom: 5%;
     background-color: #0D0D0D;
+    box-shadow: 0px 0px 20px 5px #0D0D0D;
     color: #ffff;
 }
 
@@ -271,6 +274,10 @@ header {
     color: #ffff;
     font-size: 48.061px;
     font-weight: 900;
+}
+
+.about-text strong{
+    text-decoration: underline #F29057;
 }
 
 .about-text p {
@@ -378,6 +385,7 @@ header {
 .unidades-image {
     display: flex;
     flex-direction: column;
+    width: 400px;
     transition: 0.5s;
 }
 
@@ -385,7 +393,7 @@ header {
     border-radius: 2.5em;
     width: 100%;
     height: auto;
-    border: 5px solid #fff;
+    border: 2px solid #fff;
 }
 
 .unidades-span {

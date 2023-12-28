@@ -163,9 +163,8 @@
     padding: 0;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
-    width: 2em;
+    transform: translateX(-20%);
+    width: 3em;
     z-index: 1;
     transition: 0.5s;
 }
