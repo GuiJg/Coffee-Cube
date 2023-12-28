@@ -1,4 +1,4 @@
-
+//scroll do header transparente 
 const menu = document.getElementById("header-coffee"); 
 window.addEventListener("scroll", function () {
 
@@ -15,6 +15,7 @@ window.addEventListener("scroll", function () {
     }
 });
 
+//botão do navbar responsivo mobile
 const menuButton = document.querySelector('input');
 const headerMenu = document.querySelector('.header-menu');
   
@@ -22,6 +23,7 @@ menuButton.addEventListener('click', function() {
     headerMenu.classList.toggle('active');
 });
 
+//para quando clicar no botão do navbar o header ficar transparente e com blur 
 const menuButto = document.querySelector('input');
 const headerMen = document.querySelector('header');
   
@@ -29,6 +31,7 @@ menuButto.addEventListener('click', function() {
     headerMen.classList.toggle('active');
 });
 
+//multiple slider da bilbioteca do splide
 document.addEventListener('DOMContentLoaded', function () {
     const splide = new Splide('#splide1', {
         perPage: 3,
@@ -54,19 +57,23 @@ document.addEventListener('DOMContentLoaded', function () {
     // }
 });
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     const splide = new Splide('#splide2', {
-//         grid: {
-//             rows: 2,
-//             gap: {
-//                 row: '1rem',
-//             },
-//         },
-//     }).mount({ Grid: SplideGrid });
 
-//     splide.mount();
-// });
+document.addEventListener('DOMContentLoaded', function () {
+    const splide = new Splide('#splide2', {
+        grid: {
+            rows: 2,
+            cols: 1,
+            gap: {
+                row: '1rem',
+                col: '1.5rem',
+            },
+        },
+    }).mount({ Grid: Splide.Components.Grid });
+ 
 
+});
+
+//texto estilo typing animado do banner
 const textElement = document.getElementById('animated-text');
 const words = ['café...', 'Coffee Cube'];
 let wordIndex = 0;

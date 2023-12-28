@@ -39,6 +39,8 @@
 
     .header-menu.active {
         display: flex;
+        margin-top: 10%;
+        gap: 10px;
     }
 
     .main-banner {
