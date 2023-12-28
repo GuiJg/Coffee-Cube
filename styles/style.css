@@ -52,7 +52,7 @@ header {
 
 .line {
     fill: none;
-    stroke: #ffff;
+    stroke: #fff;
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 3;
@@ -133,7 +133,7 @@ header {
     font-size: 4.5rem;
     font-weight: 400;
     overflow: hidden;
-    width: 50%;
+    width: 45%;
 }
 
 .banner-text strong {
