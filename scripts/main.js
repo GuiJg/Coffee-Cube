@@ -36,36 +36,36 @@ document.addEventListener('DOMContentLoaded', function () {
         rewindByDrag: true,
         drag: true,
         speed: 1000,
-    });
+    });splide.mount();
 
-    checkWidth();
+    // checkWidth();
 
-    window.addEventListener('resize', checkWidth);
+    // window.addEventListener('resize', checkWidth);
 
-    function checkWidth() {
-        if (window.matchMedia('(max-width: 1000px)').matches) {
-            splide.options.perPage = 1;
-        } else {
-            splide.options.perPage = 3;
-        }
+    // function checkWidth() {
+    //     if (window.matchMedia('(max-width: 1000px)').matches) {
+    //         splide.options.perPage = 1;
+    //     } else {
+    //         splide.options.perPage = 3;
+    //     }
 
-        splide.destroy();
-        splide = new Splide('#splide1', splide.options).mount();
-    }
+    //     splide.destroy();
+    //     splide = new Splide('#splide1', splide.options).mount();
+    // }
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const splide = new Splide('#splide2', {
-        grid: {
-            rows: 2,
-            gap: {
-                row: '1rem',
-            },
-        },
-    }).mount({ Grid: SplideGrid });
+// document.addEventListener('DOMContentLoaded', function () {
+//     const splide = new Splide('#splide2', {
+//         grid: {
+//             rows: 2,
+//             gap: {
+//                 row: '1rem',
+//             },
+//         },
+//     }).mount({ Grid: SplideGrid });
 
-    splide.mount();
-});
+//     splide.mount();
+// });
 
 const textElement = document.getElementById('animated-text');
 const words = ['café...', 'Coffee Cube'];
