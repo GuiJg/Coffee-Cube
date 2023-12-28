@@ -36,6 +36,43 @@ header {
     width: 9%;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger input {
+    display: none;
+}
+
+.hamburger svg {
+    height: 3em;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+    fill: none;
+    stroke: #ffff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked+svg {
+    transform: rotate(-45deg);
+}
+
+.hamburger input:checked+svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+
 .header-logo img {
     width: 100%;
 }
@@ -276,7 +313,7 @@ header {
     font-weight: 900;
 }
 
-.about-text strong{
+.about-text strong {
     text-decoration: underline #F29057;
 }
 
@@ -555,14 +592,14 @@ header {
     gap: 10%;
 }
 
-.social svg{
+.social svg {
     width: 100%;
 }
 
-.social a{
+.social a {
     transition: 0.5s;
 }
 
-.social a:hover{
+.social a:hover {
     scale: 1.05;
 }
