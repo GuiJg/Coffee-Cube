@@ -133,7 +133,7 @@ header {
     font-size: 4.5rem;
     font-weight: 400;
     overflow: hidden;
-    width: 40%;
+    margin-right: 50%;
 }
 
 .banner-text strong {
@@ -144,9 +144,6 @@ header {
 .banner-text p {
     color: #F25C05;
     font-size: 2.12rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .banner-text a {
