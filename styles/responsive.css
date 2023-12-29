@@ -185,10 +185,21 @@
 
     .feedback-page {
         flex-direction: column;
+        gap: 60px;
+    }
+
+    #slider-container{
+        width: 300px;
+        grid-template-rows: 1fr;
     }
 
     .feedback-page img {
-        width: 0;
+        transform: translateX(0%);
+        width: 100%;
+    }
+
+    .feedback-text h2{
+        margin-right: 0;
     }
 
     .contact-page {
