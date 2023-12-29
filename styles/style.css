@@ -133,7 +133,7 @@ header {
     font-size: 4.5rem;
     font-weight: 400;
     overflow: hidden;
-    width: 40%; 
+    width: 40%;
 }
 
 .banner-text strong {
@@ -459,9 +459,9 @@ header {
 .feedback-page {
     display: flex;
     justify-content: space-between;
-    margin-top: 5%;
-    margin-left: 7%;
-    margin-right: 7%;
+    padding-top: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 .feedback-text {
@@ -480,12 +480,14 @@ header {
 }
 
 .feedback-text img {
-    width: 60%;
+    transform: translateX(15%);
+    width: 45%;
 }
 
 .feedbacks {
     display: flex;
     flex-direction: column;
+    margin-right: 6%;
     gap: 30px;
 }
 
@@ -499,6 +501,58 @@ header {
 .feedback-slider {
     display: flex;
     flex-direction: column;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 100%;
+    width: 435px;
+    margin-top: 5%;
+    overflow: hidden;
+    position: relative;
+}
+
+#slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    height: 200px;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+.slide img {
+    border-radius: 20px;
+    border: 2px solid #34343416;
+    box-shadow: 2px 2px 8px #00000056;
+}
+
+#prev,
+#next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
 }
 
 .contact-page {
