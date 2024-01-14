@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #ffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    padding: 1% 4% 1% 4%;
+}
+
+.header-scroll {
+    top: 0px;
+    background-color: #00000038;
+    box-shadow: 1px 1px 10px 1px #00000038;
+    backdrop-filter: blur(5px);
+}
+
+.header-logo {
+    width: 9%;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger input {
+    display: none;
+}
+
+.hamburger svg {
+    height: 3em;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked+svg {
+    transform: rotate(-45deg);
+}
+
+.hamburger input:checked+svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+
+.header-logo img {
+    width: 100%;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 1%;
+}
+
+.header-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #ffff;
+}
+
+.point {
+    border: 2px solid #F25C05;
+    background-color: #F25C05;
+    border-radius: 100%;
+    width: 6%;
+    height: 7px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.header-link:hover .point {
+    opacity: 1;
+}
+
+.main-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 43rem;
+    position: relative; 
+}
+
+.slider {
+    position: relative; 
+}
+
+.container-banner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.container-banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 5%; /* Ajuste conforme necessário */
+    transform: translateY(-50%);
+    z-index: 1; /* Garante que os textos estejam sobrepostos às imagens */
+}
+
+.banner-text h1 {
+    color: #FFF;
+    font-family: 'Kiwi Maru', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    overflow: hidden;
+    width: 80%; /* Ajuste conforme necessário */
+}
+
+.banner-text strong {
+    font-weight: 500;
+    color: #F25C05;
+}
+
+.banner-text p {
+    color: #F25C05;
+    font-size: 2.12rem;
+    max-width: 300px; /* Ajuste conforme necessário */
+}
+
+.banner-text a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffff;
+    background-color: #F25C05;
+    border: 2px solid #F25C05;
+    border-radius: 26.525px;
+    box-shadow: 0px 2.511px 2.511px 0px rgba(0, 0, 0, 0.25);
+    width: 10%;
+    padding: 0.7%;
+    margin-top: 1.5%;
+    transition: 0.5s;
+}
+
+.banner-text a:hover {
+    background-color: transparent;
+}
+
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+    background-color: #0D0D0D;
+    padding: 5% 5% 5% 5%;
+}
+
+.contact-unidades {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-unidades h2 {
+    color: #FFF;
+    font-size: 32.118px;
+    font-weight: 600;
+}
+
+.contact-locais {
+    display: flex;
+}
+
+.locais {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.locais span {
+    color: #F25C05;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.locais p {
+    color: #ffff;
+    font-size: 18px;
+}
+
+#torre {
+    width: 50%;
+    border-right: 6px solid #ffff;
+}
+
+#jaqueira {
+    padding-left: 7%;
+    width: 50%;
+}
+
+.contact-phone {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-phone h2 {
+    color: #FFF;
+    font-size: 32.118px;
+    font-weight: 600;
+}
+
+.phone {
+    display: flex;
+    gap: 10%;
+}
+
+.phone p {
+    color: #ffff;
+    font-size: 18px;
+}
+
+.contact-social {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-social h2 {
+    color: #ffff;
+    font-size: 32.118px;
+    font-weight: 600;
+}
+
+.social {
+    display: flex;
+    gap: 10%;
+}
+
+.social svg {
+    width: 100%;
+}
+
+.social a {
+    transition: 0.5s;
+}
+
+.social a:hover {
+    scale: 1.05;
+}
+

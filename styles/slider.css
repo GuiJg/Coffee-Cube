@@ -1,0 +1,54 @@
+:root {
+  --primary-color: slategrey;
+}
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 30px -20px #223344;
+  margin: auto;
+  z-index: 0;
+  width: 100%;
+}
+
+.mySlides {
+  display: none;
+}
+
+
+.mySlides img {
+  display: block;
+  width: 100%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: auto;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 0 8px 8px 0;
+  background: rgba(173, 216, 230, 0.1);
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 8px 0 0 8px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(173, 216, 230, 0.3);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+}

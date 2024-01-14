@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/events.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/slider.css">
+     <link rel="icon shortcute" href="assets/logo-cb.png">
+    <title>Eventos - Coffee Cube</title>
+</head>
+
+<body>
+    <header class="header" id="header-coffee">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="assets/logo-cb.png" alt="logo da terra viva">
+            </a>
+            <label class="hamburger">
+                <input type="checkbox">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom"
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                    </path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+        </div>
+        <nav class="header-menu">
+            <a href="#menu" class="header-link">
+                <p>Menu</p>
+                <div class="point" style="width: 10.5%;"></div>
+            </a>
+            <a href="index.html#about" class="header-link">
+                <p>Sobre nós</p>
+                <div class="point"></div>
+            </a>
+            <a href="events.html" class="header-link">
+                <p>Eventos</p>
+                <div class="point"></div>
+            </a>
+            <a href="index.html#unidades" class="header-link">
+                <p>Unidades</p>
+                <div class="point" style="width: 7%;"></div>
+            </a>
+            <a href="#contact" class="header-link">
+                <p>Contato</p>
+                <div class="point" style="width: 7.5%;"></div>
+            </a>
+        </nav>
+    </header>
+    <section class="main-banner">
+        <div class="carousel-container">
+            <div class="mySlides animate">
+                <img src="assets/banner.png" alt="slide" />
+                <div class="text banner-text">
+                    <p>Bem-vindo 2024</p>
+                    <h1>
+                        Venha fazer seu evento com a gente!
+                    </h1>
+                </div>
+            </div>
+    
+            <div class="mySlides animate">
+                <img src="assets/coffee-beans-background.png" alt="slide" />
+                <div class="text banner-text">
+                    <p>Bem-vindo 2024</p>
+                    <h1>
+                        Venha fazer seu evento com a gente!
+                    </h1>
+                </div>
+            </div>
+    
+            <div class="mySlides animate">
+                <img src="assets/banner.png" alt="slide" />
+                <div class="text banner-text">
+                    <p>Bem-vindo 2024</p>
+                    <h1>
+                        Venha fazer seu evento com a gente!
+                    </h1>
+                </div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="prevSlide()">&#10094;</a>
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+    </section>
+    <section class="contact-page">
+        <a class="logo-footer" href="#">
+            <img src="assets/logo-cb.png" alt="Logo da Coffee Cube">
+        </a>
+        <div class="contact-unidades">
+            <h2>Localidade das Unidades</h2>
+            <div class="contact-locais">
+                <div class="locais" id="torre">
+                    <span>Torre</span>
+                    <p>Mercado da Torre - Rua José Bonifácio, 747</p>
+                </div>
+                <div class="locais" id="jaqueira">
+                    <span>Jaqueira</span>
+                    <p>Rua Serrita, 24 - Jaqueira</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-phone">
+            <h2>Entre em Contato</h2>
+            <div class="phone">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                    <path fill="#f25c05"
+                        d="m19.23 15.26l-2.54-.29a1.99 1.99 0 0 0-1.64.57l-1.84 1.84a15.045 15.045 0 0 1-6.59-6.59l1.85-1.85c.43-.43.64-1.03.57-1.64l-.29-2.52a2.001 2.001 0 0 0-1.99-1.77H5.03c-1.13 0-2.07.94-2 2.07c.53 8.54 7.36 15.36 15.89 15.89c1.13.07 2.07-.87 2.07-2v-1.73c.01-1.01-.75-1.86-1.76-1.98" />
+                </svg>
+                <p>(81) 9 9203-3952</p>
+            </div>
+        </div>
+        <div class="contact-social">
+            <div class="social-text">
+                <h2>Redes sociais</h2>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/coffeecubebr" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                        <path fill="#f25c05"
+                            d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/coffeecubebr" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                        <path fill="#f25c05"
+                            d="M13.028 2c1.125.003 1.696.009 2.189.023l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.012.266.022.487.03.712l.006.194c.015.492.021 1.063.023 2.188l.001.746v1.31a78.831 78.831 0 0 1-.023 2.188l-.006.194c-.008.225-.018.446-.03.712c-.05 1.065-.22 1.79-.466 2.428a4.883 4.883 0 0 1-1.153 1.772a4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465a72.11 72.11 0 0 1-.712.03l-.194.006c-.493.014-1.064.021-2.189.023l-.746.001h-1.309a78.43 78.43 0 0 1-2.189-.023l-.194-.006a63.036 63.036 0 0 1-.712-.031c-1.064-.05-1.79-.218-2.428-.465a4.889 4.889 0 0 1-1.771-1.153a4.904 4.904 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.428a74.1 74.1 0 0 1-.03-.712l-.005-.194A79.047 79.047 0 0 1 2 13.028v-2.056a78.82 78.82 0 0 1 .022-2.188l.007-.194c.008-.225.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.88 4.88 0 0 1 3.68 3.678a4.897 4.897 0 0 1 1.77-1.153c.638-.247 1.363-.415 2.428-.465c.266-.012.488-.022.712-.03l.194-.006a79 79 0 0 1 2.188-.023zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 2a3 3 0 1 1 .001 6a3 3 0 0 1 0-6m5.25-3.5a1.25 1.25 0 0 0 0 2.5a1.25 1.25 0 0 0 0-2.5" />
+                    </svg>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5581992033952&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20pedido!"
+                    target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 16 16">
+                        <path fill="#f25c05"
+                            d="M13.95 4.24C11.86 1 7.58.04 4.27 2.05C1.04 4.06 0 8.44 2.09 11.67l.17.26l-.7 2.62l2.62-.7l.26.17c1.13.61 2.36.96 3.58.96c1.31 0 2.62-.35 3.75-1.05c3.23-2.1 4.19-6.39 2.18-9.71Zm-1.83 6.74c-.35.52-.79.87-1.4.96c-.35 0-.79.17-2.53-.52c-1.48-.7-2.71-1.84-3.58-3.15c-.52-.61-.79-1.4-.87-2.19c0-.7.26-1.31.7-1.75c.17-.17.35-.26.52-.26h.44c.17 0 .35 0 .44.35c.17.44.61 1.49.61 1.58c.09.09.05.76-.35 1.14c-.22.25-.26.26-.17.44c.35.52.79 1.05 1.22 1.49c.52.44 1.05.79 1.66 1.05c.17.09.35.09.44-.09c.09-.17.52-.61.7-.79c.17-.17.26-.17.44-.09l1.4.7c.17.09.35.17.44.26c.09.26.09.61-.09.87Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/slider.js"></script>
+</body>
+
+</html>

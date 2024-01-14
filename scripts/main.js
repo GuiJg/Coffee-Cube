@@ -126,3 +126,4 @@ function showNextSlide() {
 
 prevButton.addEventListener('click', showPrevSlide);
 nextButton.addEventListener('click', showNextSlide);
+
