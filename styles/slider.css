@@ -19,6 +19,7 @@
 .mySlides img {
   display: block;
   width: 100%;
+  filter: brightness(50%);
 }
 
 .prev,

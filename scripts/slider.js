@@ -42,7 +42,6 @@ function showSlides() {
     dot.classList.remove("active");
   });
   
-  dots[slideIndex].classList.add("active");
 }
 
 // autoplay slides --------

@@ -73,16 +73,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-//texto estilo typing animado do banner
-const textElement = document.getElementById('animated-text');
-const words = ['café...', 'Coffee Cube'];
-let wordIndex = 0;
-let charIndex = 0;
+//texto estilo typing animado do banner evento
+const elementText = document.getElementById('animated-text');
+const word = ['café...', 'Coffee Cube'];
+let indexWord = 0;
+let indexChar = 0;
 
 function type() {
-    if (charIndex < words[wordIndex].length) {
-        textElement.innerHTML += words[wordIndex].charAt(charIndex);
-        charIndex++;
+    if (indexChar < word[indexWord].length) {
+        elementText.innerHTML += word[indexWord].charAt(indexChar);
+        indexChar++;
         setTimeout(type, 200);
     } else {
         setTimeout(erase, 500);
@@ -90,12 +90,12 @@ function type() {
 }
 
 function erase() {
-    if (charIndex > 0) {
-        textElement.innerHTML = words[wordIndex].substring(0, charIndex - 1);
-        charIndex--;
+    if (indexChar > 0) {
+        elementText.innerHTML = word[indexWord].substring(0, indexChar - 1);
+        indexChar--;
         setTimeout(erase, 150);
     } else {
-        wordIndex = (wordIndex + 1) % words.length;
+        indexWord = (indexWord + 1) % word.length;
         setTimeout(type, 500);
     }
 }
@@ -127,3 +127,22 @@ function showNextSlide() {
 prevButton.addEventListener('click', showPrevSlide);
 nextButton.addEventListener('click', showNextSlide);
 
+//filtro projetos 
+$(document).ready(function () {
+    // Evento de clique para os botões de filtro
+    $('.filter-btn').on('click', function () {
+        const type = $(this).data('type');
+  
+        // Oculta todos os projetos
+        $('.item-projects').hide();
+  
+        // Mostra apenas os projetos do tipo selecionado
+        $('.' + type).show().addClass('filtered');
+    });
+  
+    // Evento de clique para o botão de limpar filtro
+    $('.clear-filter-btn').on('click', function () {
+        // Remova todas as classes de filtro e mostre todos os projetos
+        $('.item-projects').show().removeClass('filtered');
+    });
+  });

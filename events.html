@@ -53,7 +53,7 @@
     <section class="main-banner">
         <div class="carousel-container">
             <div class="mySlides animate">
-                <img src="assets/banner.png" alt="slide" />
+                <img src="assets/torre-banner.png" alt="slide" />
                 <div class="text banner-text">
                     <p>Bem-vindo 2024</p>
                     <h1>
@@ -63,7 +63,7 @@
             </div>
     
             <div class="mySlides animate">
-                <img src="assets/coffee-beans-background.png" alt="slide" />
+                <img src="assets/jaqueira-banner.png" alt="slide" />
                 <div class="text banner-text">
                     <p>Bem-vindo 2024</p>
                     <h1>
@@ -73,7 +73,7 @@
             </div>
     
             <div class="mySlides animate">
-                <img src="assets/banner.png" alt="slide" />
+                <img src="assets/pessoas-bannner.png" alt="slide" />
                 <div class="text banner-text">
                     <p>Bem-vindo 2024</p>
                     <h1>
@@ -86,7 +86,87 @@
             <a class="next" onclick="nextSlide()">&#10095;</a>
         </div>
     </section>
-    <section class="contact-page">
+    <section class="container-events">
+        <div class="title-events">
+            <h1>
+                Em 2023, foram mais de <strong id="animated-events"></strong>
+            </h1>
+        </div>
+        <div class="expo-events">
+            <div class="item-events">
+                <img src="assets/cardapio-1.webp" alt="">
+                <span>Show</span>
+            </div>
+            <div class="item-events">
+                <img src="assets/cardapio-2.webp" alt="">
+                <span>Palestra</span>
+            </div>
+            <div class="item-events">
+                <img src="assets/cardapio-3.webp" alt="">
+                <span>Feira</span>
+            </div>
+            <div class="item-events">
+                <img src="assets/cardapio-5.webp" alt="">
+                <span>Aniversário</span>
+            </div>
+        </div>
+    </section>
+    <section class="container-calendar">
+        <div class="text-calendar">
+            <h2>
+                Explore os nossos eventos marcados
+            </h2>
+            <p>
+                Confira novos eventos que teremos abaixo.
+            </p>
+        </div>
+        <div class="calendar-events">
+            <div class="container-filters">
+                <button class="filter-btn" data-type="segunda">15/01/2024 (Segunda)</button>
+                <button class="filter-btn" data-type="terça">16/01/2024 (Terça)</button>
+                <button class="filter-btn" data-type="quarta">17/01/2024 (Quarta)</button>
+                <button class="clear-filter-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="white" d="M15 19.88c.04.3-.06.62-.29.83a.996.996 0 0 1-1.41 0L9.29 16.7a.989.989 0 0 1-.29-.83v-5.12L4.21 4.62a1 1 0 0 1 .17-1.4c.19-.14.4-.22.62-.22h14c.22 0 .43.08.62.22a1 1 0 0 1 .17 1.4L15 10.75zM7.04 5L11 10.06v5.52l2 2v-7.53L16.96 5z"></path>
+                    </svg>
+                    Limpar Filtro
+                </button>   
+            </div>
+            <div class="events">
+                <div class="cards-events segunda">
+                    <img src="assets/cardapio-1.webp" alt="">
+                    <p>Show</p>
+                </div>
+                <div class="cards-events segunda">
+                    <img src="assets/cardapio-2.webp" alt="">
+                    <p>Palestra</p>
+                </div>
+                <div class="cards-events terça">
+                    <img src="assets/cardapio-3.webp" alt="">
+                    <p>Feira</p>
+                </div>
+                <div class="cards-events quarta">
+                    <img src="assets/cardapio-5.webp" alt="">
+                    <p>Aniversário</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form-page">
+        <div class="title-contact">
+            <h2>Marque um Evento com a gente!</h2>
+        </div>
+        <form action="https://formspree.io/f/mkndndkd" method="POST" class="form">
+            <label for="name">Nome completo</label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome" required="">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite um e-mail válido" required="">
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" placeholder="Digite sua descrição aqui" required=""></textarea>
+            <button type="submit">Solicitar Agendamento</button>
+        </form>
+    </section>
+    <footer class="contact-page">
         <a class="logo-footer" href="#">
             <img src="assets/logo-cb.png" alt="Logo da Coffee Cube">
         </a>
@@ -139,9 +219,11 @@
                 </a>
             </div>
         </div>
-    </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/slider.js"></script>
+    <script src="scripts/animation.js"></script>
 </body>
 
 </html>
